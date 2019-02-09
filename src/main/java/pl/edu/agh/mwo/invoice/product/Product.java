@@ -3,7 +3,7 @@ package pl.edu.agh.mwo.invoice.product;
 import java.math.BigDecimal;
 
 public abstract class Product {
-	private static final BigDecimal PriceWithTax = null;
+	
 
 	private final String name;
 
@@ -15,14 +15,14 @@ public abstract class Product {
 
 		
 		
-	if(name == null || name == "")	 {
+	if(name == null || name.equals(""))	{
 		throw new IllegalArgumentException ("Wrong");		
 	}
 	else {
 		this.name = name;
 	}	
-	
-	
+
+		
 		
 	if (price == null || price.intValue() <0 )	{
 		throw new IllegalArgumentException ("Wrong");	
