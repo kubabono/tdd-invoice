@@ -37,8 +37,8 @@ public class Invoice {
 	}
 
 	public BigDecimal getTax() {
-		return BigDecimal.ZERO;
-		
+		BigDecimal total = new BigDecimal();
+		total = 0;
 		if (products.isEmpty()){
 			return BigDecimal.ZERO;
 		}
